@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
-import { GLTF } from "three/examples/jsm/Addons.js";
+// import { GLTF } from "three/examples/jsm/Addons.js";
+// import { Gltf } from "@react-three/drei";
 import { Float, Decal } from "@react-three/drei";
-interface IGLTF extends GLTF {
-  nodes: { [key: string]: THREE.Mesh };
-  materials: { [key: string]: THREE.MeshStandardMaterial };
-}
+// interface IGLTF extends Gltf {
+//   nodes: { [key: string]: THREE.Mesh };
+//   materials: { [key: string]: THREE.MeshStandardMaterial };
+// }
 
 export function ModelBall({ imgUrl }: { imgUrl: string }) {
   const [decal] = useTexture([imgUrl]);

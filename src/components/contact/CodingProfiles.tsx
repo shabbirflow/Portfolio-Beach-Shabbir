@@ -1,3 +1,4 @@
+"use client";
 import { socialLinks } from "@/app/constants";
 import { FC } from "react";
 import BallCanvas from "../three/BallCanvas";
@@ -21,12 +22,8 @@ const CodingProfiles: FC<CodingProfilesProps> = ({}) => {
                 target="_blank"
                 className="btn btn-ghost cursor-pointer m-0 p-0  rounded-full w-20 h-20 flex flex-col justify-center items-center"
               >
-                {window.innerWidth < 900 && (
-                  <SkillImage imgUrl={`/codingprofiles/${x.title}.png`} />
-                )}
-                {window.innerWidth >= 900 && (
-                  <BallCanvas imgUrl={`/codingprofiles/${x.title}.png`} />
-                )}
+                <SkillImage imgUrl={`/codingprofiles/${x.title}.png`} />
+                {/* <BallCanvas imgUrl={`/codingprofiles/${x.title}.png`} /> */}
               </a>
             </div>
           );

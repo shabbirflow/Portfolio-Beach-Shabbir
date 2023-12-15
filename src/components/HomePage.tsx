@@ -25,8 +25,9 @@ const HomePage: FC<HomePageProps> = ({}) => {
     <div className="w-screen h-screen relative" data-theme={theme}>
       <div className="grid w-full h-full md:grid-cols-2 md:grid-rows-1 grid-rows-3 grid-cols-1 gap-1 z-10">
         <div className="flex flex-col items-center h-full">{leftStuff}</div>
-        <div className="flex flex-row justify-center items-center md:hidden">
-          <div className="mockup-code w-[80vw] p-3">
+        <div className="flex flex-row justify-center items-center md:hidden ">
+          <div className="mockup-code m-6 h-[80%] w-[90%] p-3">
+            {/* w-[80vw] */}
             {/* {stuff.aboutCodeLines.map((x, ind) => {
               return (
                 <pre data-prefix="$" key={ind} className="text-xs md:text-base">
@@ -34,14 +35,14 @@ const HomePage: FC<HomePageProps> = ({}) => {
                 </pre>
               );
             })} */}
-            <TypeAnimation
+            <TypeAnimation 
               // style={{ whiteSpace: "pre-line" }}
               sequence={[
                 stuff.aboutCodeLines.reduce(
                   (acc: string, curr: string, ind) => {
-                    if (ind >= 2) {
-                      return acc;
-                    }
+                    // if (ind >= 2) {
+                    //   return acc;
+                    // }
                     const ele = acc.length ? `\n$   ${curr}` : `$   ${curr}`;
                     return (acc += ele);
                   },
@@ -91,7 +92,7 @@ const leftStuff = (
       </div>
       <div className="w-full flex flex-row justify-evenly items-center md:pt-4 lg:pt-8">
         <button
-          className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-primary shadow-md shadow-accent"
+          className="btn btn-md lg:btn-lg btn-primary shadow-md shadow-accent"
           onClick={(e) => {
             e.preventDefault();
             scrollToId("experience");
@@ -101,7 +102,7 @@ const leftStuff = (
         </button>
         <a
           role="button"
-          className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg btn-secondary shadow-md shadow-accent"
+          className="btn btn-md lg:btn-lg btn-secondary shadow-md shadow-accent"
           target="_blank"
           href={stuff.cvURL}
         >

@@ -22,7 +22,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
   time,
 }) => {
   return (
-    <Fade triggerOnce={true} duration={1000} fraction={0.35}>
+    <Fade triggerOnce={true} duration={1000} fraction={0.35} className="w-fit flex flex-col justify-center items-center">
       <div className="z-10 m-2 p-2 card w-[78%] bg-base-100 shadow-md shadow-accent cursor-pointer">
         <div className="card-body">
           <h2 className="card-title text-xl font-bold">{title}</h2>

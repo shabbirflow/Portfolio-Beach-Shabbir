@@ -22,8 +22,8 @@ const CodingProfiles: FC<CodingProfilesProps> = ({}) => {
                 target="_blank"
                 className="btn btn-ghost cursor-pointer m-0 p-0  rounded-full w-20 h-20 flex flex-col justify-center items-center"
               >
-                <SkillImage imgUrl={`/codingprofiles/${x.title}.png`} />
-                {/* <BallCanvas imgUrl={`/codingprofiles/${x.title}.png`} /> */}
+                {/* <SkillImage imgUrl={`/codingprofiles/${x.title}.png`} /> */}
+                <BallCanvas imgUrl={`/codingprofiles/${x.title}.png`} />
               </a>
             </div>
           );

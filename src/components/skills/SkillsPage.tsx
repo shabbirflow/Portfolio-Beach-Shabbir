@@ -15,7 +15,7 @@ const SkillsPage = ({}) => {
     <div className="w-screen h-screen md:p-0 p-3 relative" data-theme={theme}>
       <div
         data-theme={theme}
-        className={`flex flex-col items-center w-full h-full bg-cover bg-center`}
+        className={`flex flex-col items-center w-full h-full bg-cover bg-center justify-center`}
       >
         <StarsCanvas />
         <Fade triggerOnce duration={700} className="z-10 cursor-pointer">

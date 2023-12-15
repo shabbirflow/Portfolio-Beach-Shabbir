@@ -37,7 +37,7 @@ const ContactPage = ({}) => {
             <h2 className="text-3xl font-semibold text-accent text-center p-1 z-10 cursor-pointer">
               Say Hello
             </h2>
-            <Slide direction="right" triggerOnce duration={1000}>
+            <Slide direction="right" triggerOnce duration={1000} fraction={0.5}>
             <ContactForm />
             </Slide>
           </div>

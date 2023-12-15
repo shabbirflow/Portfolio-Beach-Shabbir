@@ -12,7 +12,7 @@ const SkillsPage = ({}) => {
   const { theme } = context;
 
   return (
-    <div className="w-screen md:h-screen h-fit md:p-0 p-3 relative" data-theme={theme}>
+    <div className="w-screen h-screen md:p-0 p-3 relative" data-theme={theme}>
       <div
         data-theme={theme}
         className={`flex flex-col items-center w-full h-full bg-cover bg-center`}

@@ -25,7 +25,7 @@ const ThemeDropDown: FC<ThemeDropDownProps> = ({}) => {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content z-[1] shadow-2xl bg-base-300 rounded-box w-40 h-[65vh] overflow-scroll overflow-x-hidden scrollbar-thin scrollbar-track-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600 scrollbar-thumb-rounded-md"
+        className="dropdown-content z-[1] shadow-2xl bg-base-300 rounded-box w-40 md:h-[65vh] h-[40vh] overflow-scroll overflow-x-hidden scrollbar-thin scrollbar-track-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600 scrollbar-thumb-rounded-md"
       >
         {themeArray.map((x: any) => {
           const thisTheme = Object.keys(x)[0];

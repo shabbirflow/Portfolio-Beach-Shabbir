@@ -57,6 +57,23 @@ const NeonModel = () => {
 };
 
 export default function NeonCanvas() {
+  
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const mobile = window.matchMedia("(max-width: 768px)").matches;
+      setIsMobile(mobile);
+      console.log(mobile)
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   // return <></>;
   return (
     <Canvas
@@ -68,24 +85,16 @@ export default function NeonCanvas() {
         <Environment files="/models/forest_slope_1k.hdr" />
         <NeonModel />
         <ContactShadows position={[0, 0, 0]} color="#ffffff" />
-        <OrbitControls
-          maxPolarAngle={Math.PI / 4}
-          minPolarAngle={0}
-          maxAzimuthAngle={Math.PI / 16}
-          minAzimuthAngle={-Math.PI / 16}
-          // onUpdate={(self) => {
-          //     const azimuthalAngle = self.getAzimuthalAngle();
-          //     if (
-          //       azimuthalAngle >= self.maxAzimuthAngle - 0.01 ||
-          //       azimuthalAngle <= self.minAzimuthAngle + 0.01
-          //     ) {
-          //         console.log("CAME HERE");
-          //       self.autoRotateSpeed = self.autoRotateSpeed * -1;
-          //     }
-          //   }}
-          autoRotate
-          enableZoom={false}
-        />
+        {!isMobile && (
+          <OrbitControls
+            maxPolarAngle={Math.PI / 4}
+            minPolarAngle={0}
+            maxAzimuthAngle={Math.PI / 16}
+            minAzimuthAngle={-Math.PI / 16}
+            autoRotate
+            enableZoom={!isMobile} // Disable zoom on mobile devices
+          />
+        )}
       </Suspense>
     </Canvas>
   );

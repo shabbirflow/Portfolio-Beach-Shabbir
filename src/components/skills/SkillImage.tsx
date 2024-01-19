@@ -7,7 +7,7 @@ interface SkillImageProps {
 
 const SkillImage: FC<SkillImageProps> = ({ imgUrl }) => {
   return (
-    <div className="avatar z-10 cursor-pointer drop-shadow-lg">
+    <div className="avatar z-10 cursor-pointer drop-shadow-lg h-fit">
       <Tilt
         className="parallax-effect-glare-scale"
         perspective={500}

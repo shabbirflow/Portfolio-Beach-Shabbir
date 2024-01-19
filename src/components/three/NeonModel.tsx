@@ -92,7 +92,7 @@ export default function NeonCanvas() {
             maxAzimuthAngle={Math.PI / 16}
             minAzimuthAngle={-Math.PI / 16}
             autoRotate
-            enableZoom={!isMobile} // Disable zoom on mobile devices
+            enableZoom={false} // Disable zoom on mobile devices
           />
         )}
       </Suspense>

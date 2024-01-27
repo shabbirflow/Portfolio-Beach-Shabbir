@@ -43,7 +43,7 @@ const ContactPage = ({}) => {
           </div>
         </div>
       </div>
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
     </div>
   );
 };

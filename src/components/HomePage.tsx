@@ -59,7 +59,7 @@ const HomePage: FC<HomePageProps> = ({}) => {
           <NeonCanvas />
         </div>
       </div>
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
     </div>
   );
 };

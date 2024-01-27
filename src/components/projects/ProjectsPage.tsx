@@ -14,7 +14,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
   const { theme } = context;
   return (
     <div className="w-screen md:h-screen relative h-fit">
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
       <div
         data-theme={theme}
         className="flex flex-col items-center w-full md:h-full bg-cover bg-center h-fit"

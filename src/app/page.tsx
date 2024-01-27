@@ -6,13 +6,15 @@ import ExperiencePage from "@/components/experience/ExperiencePage";
 import Projects from "@/components/projects/ProjectsPage";
 import SkillsPage from "@/components/skills/SkillsPage";
 import ContactPage from "@/components/contact/ContactPage";
+import StarsCanvas from "@/components/three/Stars";
 
 export default function Home() {
   const context = useContext(ThemeContext);
   if (!context) throw new Error("THEME CONTEXT NOT FOUND");
 
   return (
-    <div className="w-screen flex flex-col scrollbar scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600">
+    <div className="w-screen flex flex-col scrollbar scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600 relative">
+      <StarsCanvas />
       <section id="home">
         <HomePage />
       </section>

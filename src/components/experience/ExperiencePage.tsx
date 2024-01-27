@@ -25,7 +25,7 @@ const ExperiencePage: FC<ExperiencePageProps> = ({}) => {
           <ExperienceTimeline />
         </div>
       </div>
-      <StarsCanvas />
+      {/* <StarsCanvas /> */}
     </div>
   );
 };

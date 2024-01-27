@@ -17,7 +17,7 @@ const SkillsPage = ({}) => {
         data-theme={theme}
         className={`flex flex-col items-center w-full h-full bg-cover bg-center md:justify-normal justify-center`}
       >
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
         <Fade triggerOnce duration={700} className="z-10 cursor-pointer">
           <h1 className="lg:text-5xl md:3xl text-2xl z-10 cursor-pointer md:hover:scale-105 hover:drop-shadow-lg hover:shadow-base-200 font-bold md:p-4 p-2 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent transition duration-150">
             Skills

@@ -13,7 +13,7 @@ const Stars = (props: {}) => {
 
   // Define a state variable 'sphere' using the useState hook
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(270), { radius: 1.5 })
+    random.inSphere(new Float32Array(280), { radius: 1.5 })
   );
 
   // Use the useFrame hook to perform animation logic on each frame

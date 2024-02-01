@@ -26,7 +26,7 @@ const HomePage: FC<HomePageProps> = ({}) => {
       <div className="grid w-full h-full md:grid-cols-2 md:grid-rows-1 grid-rows-3 grid-cols-1 gap-1">
         <div className="flex flex-col items-center h-full">{leftStuff}</div>
         <div className="flex flex-row justify-center items-center md:hidden ">
-          <div className="mockup-code m-6 h-[80%] w-[90%] p-3">
+          <div className="mockup-code m-6 h-[80%] w-[90%] p-3 z-40">
             {/* w-[80vw] */}
             {/* {stuff.aboutCodeLines.map((x, ind) => {
               return (
@@ -35,8 +35,8 @@ const HomePage: FC<HomePageProps> = ({}) => {
                 </pre>
               );
             })} */}
-            <TypeAnimation 
-              // style={{ whiteSpace: "pre-line" }}
+            <TypeAnimation
+              style={{ zIndex: 50 }}
               sequence={[
                 stuff.aboutCodeLines.reduce(
                   (acc: string, curr: string, ind) => {

@@ -23,7 +23,7 @@ const HomePage: FC<HomePageProps> = ({}) => {
   const { theme, setTheme } = context;
   return (
     <div className="w-screen h-screen relative" data-theme={theme}>
-      <div className="grid w-full h-full md:grid-cols-2 md:grid-rows-1 grid-rows-3 grid-cols-1 gap-1 z-10">
+      <div className="grid w-full h-full md:grid-cols-2 md:grid-rows-1 grid-rows-3 grid-cols-1 gap-1">
         <div className="flex flex-col items-center h-full">{leftStuff}</div>
         <div className="flex flex-row justify-center items-center md:hidden ">
           <div className="mockup-code m-6 h-[80%] w-[90%] p-3">

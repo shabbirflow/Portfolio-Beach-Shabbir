@@ -13,7 +13,7 @@ const Stars = (props: {}) => {
 
   // Define a state variable 'sphere' using the useState hook
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(280), { radius: 1.5 })
+    random.inSphere(new Float32Array(380), { radius: 1.35 })
   );
 
   // Use the useFrame hook to perform animation logic on each frame
@@ -48,7 +48,7 @@ const Stars = (props: {}) => {
         <PointMaterial
           // transparent
           color={themecolors['color-scheme'] === 'dark' ? '#eccdcd' : '#04291b'}
-          size={0.0035}
+          size={0.0015}
           // size={0.008}
           sizeAttenuation={true}
           depthWrite={false}
@@ -63,7 +63,7 @@ const StarsCanvas = () => {
   // return <></>
   // Return a JSX structure containing a three.js Canvas, Suspense, and the 'Stars' component
   return (
-    <div className="w-full h-auto absolute inset-0 z-[1]">
+    <div className="w-full h-auto absolute inset-0 z-[5]">
       {/* Canvas provides a rendering context for three.js components */}
       <Canvas camera={{ position: [0, 0, 1] }}>
         {/* Suspense component allows rendering fallback content while waiting for data */}

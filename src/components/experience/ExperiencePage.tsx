@@ -12,7 +12,7 @@ const ExperiencePage: FC<ExperiencePageProps> = ({}) => {
   if (!context) throw new Error("THEME CONTEXT NOT FOUND");
   const { theme } = context;
   return (
-    <div className="md:w-[screen] md:h-screen h-fit p-1 md:p-3 relative" data-theme={theme} >
+    <div className="md:w-screen md:h-screen w-full h-fit p-1 md:p-3 relative" data-theme={theme} >
 
       <div
         data-theme={theme}

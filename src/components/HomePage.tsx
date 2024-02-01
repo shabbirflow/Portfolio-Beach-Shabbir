@@ -51,7 +51,7 @@ const HomePage: FC<HomePageProps> = ({}) => {
                 1000,
               ]}
               repeat={Infinity}
-              className="whitespace-pre w-fit font-mono text-xs"
+              className="whitespace-pre w-fit font-mono text-xs z-50"
             />
           </div>
         </div>

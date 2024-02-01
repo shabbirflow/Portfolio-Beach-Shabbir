@@ -35,7 +35,7 @@ const HomePage: FC<HomePageProps> = ({}) => {
                 </pre>
               );
             })} */}
-            <TypeAnimation
+            {/* <TypeAnimation
               style={{ zIndex: 50 }}
               sequence={[
                 stuff.aboutCodeLines.reduce(
@@ -51,8 +51,11 @@ const HomePage: FC<HomePageProps> = ({}) => {
                 1000,
               ]}
               repeat={Infinity}
-              className="whitespace-pre w-fit font-mono text-xs z-50"
-            />
+              className="whitespace-pre w-fit font-mono text-xs z-50" */}
+            {/* /> */}
+            <h1 className="whitespace-pre w-fit font-mono text-xs z-50">
+              Shabbir Kaderi
+            </h1>
           </div>
         </div>
         <div className="h-full w-full flex flex-col justify-center items-center ">

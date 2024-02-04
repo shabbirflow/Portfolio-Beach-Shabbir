@@ -35,7 +35,7 @@ const HomePage: FC<HomePageProps> = ({}) => {
                 </pre>
               );
             })} */}
-            {/* <TypeAnimation
+            <TypeAnimation
               style={{ zIndex: 50 }}
               sequence={[
                 stuff.aboutCodeLines.reduce(
@@ -51,11 +51,11 @@ const HomePage: FC<HomePageProps> = ({}) => {
                 1000,
               ]}
               repeat={Infinity}
-              className="whitespace-pre w-fit font-mono text-xs z-50" */}
-            {/* /> */}
-            <h1 className="whitespace-pre w-fit font-mono text-xs z-50">
+              className="whitespace-pre w-fit font-mono text-xs z-50"
+            />
+            {/* <h1 className="whitespace-pre w-fit font-mono text-xs z-50">
               Shabbir Kaderi
-            </h1>
+            </h1> */}
           </div>
         </div>
         <div className="h-full w-full flex flex-col justify-center items-center ">
@@ -74,9 +74,9 @@ const leftStuff = (
     <div className="p-5 md:pb-16 flex flex-col gap-5 z-[10] md:w-[40vw] w-full absolute">
       <h1 className="md:text-[50px] text-[35px] font-bold lg:pt-24 md:pt-18 lg:mt-10 pt-14 cursor-pointer text-center">
         <span className="text-3xl lg:text-7xl md:text-5xl z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary md:text-center">
-          <Fade duration={200} cascade>
+          {/* <Fade duration={200} cascade> */}
             {stuff.title}
-          </Fade>
+          {/* </Fade> */}
         </span>
       </h1>
       <div className="mockup-code md:block hidden lg:m-4 md:m-2 lg:p-8 p-4 w-full relative h-48 scrollbar scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600">
@@ -117,12 +117,3 @@ const leftStuff = (
   </>
 );
 
-{
-  /* {stuff.aboutCodeLines.map((x, ind) => {
-          return (
-            <pre data-prefix="$" key={ind} className="w-fit">
-              <code>{x}</code>
-            </pre>
-          );
-        })} */
-}

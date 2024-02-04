@@ -12,7 +12,7 @@ const ContactPage = ({}) => {
   if (!context) throw new Error("THEME CONTEXT NOT FOUND");
   const { theme } = context;
   return (
-    <div className="w-screen h-screen relative">
+    <div className="w-screen h-fit min-h-screen relative">
       <div
         data-theme={theme}
         className={`flex flex-col items-center w-full h-full bg-cover bg-center`}

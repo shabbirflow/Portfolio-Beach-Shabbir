@@ -13,7 +13,7 @@ export default function Home() {
   if (!context) throw new Error("THEME CONTEXT NOT FOUND");
 
   return (
-    <div className="w-screen flex flex-col scrollbar scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600">
+    <div className="w-screen h-fit flex flex-col scrollbar scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600">
       {/* <StarsCanvas /> */}
       <section id="home">
         <HomePage />

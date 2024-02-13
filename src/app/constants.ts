@@ -69,14 +69,20 @@ export const experienceTimeLine = [
     title: "Pune Institute of Computer Technology",
     desc: "B.E. in Electronics & Telecommunication Eng.",
     time: "2021 - 2025",
-    type: "work",
+    type: "education",
     grade: "8.1 CGPA",
   },
   {
     title: "DevOps Intern @ LightBeam.ai",
-    desc: "Worked on various DevOps projects",
+    desc: "Worked on Prometheus stack & Alermanager",
     time: "June 2023 - July 2023",
-    type: "education",
+    type: "work",
+  },
+    {
+    title: "DevOps Intern @ Rhythmflows Solutions",
+    desc: "Worked on creating Jenkins pipelines",
+    time: "Jan 2024 - Current",
+    type: "work",
   },
 ];
 

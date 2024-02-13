@@ -4,7 +4,7 @@ export const stuff = {
     "software Developer & DSA Enthusiast",
     "skilled in frontend development & DevOps",
     "solving problems, crafting cool web presences",
-    "optimizing workflows for seamless workflows",
+    "optimizing workflows for seamless delivery",
   ],
   cvURL: "https://drive.google.com/drive/folders/1TUOf5S2SefMvBxPV2rKieBegMnaTGJCL?usp=sharing",
   email: "kaderishabbir@gmail.com",

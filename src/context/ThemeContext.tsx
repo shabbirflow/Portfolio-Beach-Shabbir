@@ -13,7 +13,7 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<string>('synthwave');
+  const [theme, setTheme] = useState<string>('luxury');
 
   const contextValue: ThemeContextProps = {
     theme,

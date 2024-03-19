@@ -40,12 +40,12 @@ export const projects = [
       "A serverless, blockchain based voting system using Ethereum offering a more secure way for elections",
   },
   {
-    title: "Neon 3D Portfolio",
-    image: "neon.png",
-    githubURL: "https://github.com/shabbirflow/Neon-3D-Portfolio",
-    liveURL: "https://neon-3d-portfolio.netlify.app",
+    title: "SwiftServe",
+    image: "swiftserve.png",
+    githubURL: "https://github.com/shabbirflow/SwiftServe",
+    liveURL: "https://youtu.be/B2qUnOyspUQp",
     description:
-      "A portfolio site made with ReactJs which looks great & has 3D models from the ThreeJS library.",
+      "A deployment service to deploy your React Websites ( Js or Ts ) to the internet & take your projects online with speed.",
   },
   {
     title: "Sorting Visualizer",

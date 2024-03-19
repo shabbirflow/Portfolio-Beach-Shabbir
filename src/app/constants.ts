@@ -1,7 +1,7 @@
 export const stuff = {
   title: "Shabbir Kaderi",
   aboutCodeLines: [
-    "software Developer & DSA Enthusiast",
+    "software developer & DSA enthusiast",
     "skilled in frontend development & DevOps",
     "solving problems, crafting cool web presences",
     "optimizing workflows for seamless delivery",

@@ -15,10 +15,10 @@ const Carousel: FC<CarouselProps> = ({ expNum, setExpNum }) => {
       <div className="carousel-item relative w-full">
         <ExperienceCard {...experience[expNum]} />
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <button className="btn btn-circle" onClick={() => setExpNum(expNum != 0 ? expNum - 1 : maxExp-1)}>
+          <button className="btn btn-circle z-[99]" onClick={() => setExpNum(expNum != 0 ? expNum - 1 : maxExp-1)}>
             ❮
           </button>
-          <button className="btn btn-circle" onClick={() => setExpNum(expNum != maxExp - 1 ? expNum + 1 : 0)}>
+          <button className="btn btn-circle z-[99]" onClick={() => setExpNum(expNum != maxExp - 1 ? expNum + 1 : 0)}>
             ❯
           </button>
         </div>

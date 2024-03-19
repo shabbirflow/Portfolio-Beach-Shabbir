@@ -3,9 +3,12 @@ import { experienceTimeLine } from "@/app/constants";
 import { Code, School2 } from "lucide-react";
 import { Fade } from "react-awesome-reveal";
 
-interface ExperienceTimelineProps {}
+interface ExperienceTimelineProps {
+  expNum: number;
+  setExpNum: React.Dispatch<React.SetStateAction<number>>;
+}
 
-const ExperienceTimeline: FC<ExperienceTimelineProps> = ({}) => {
+const ExperienceTimeline: FC<ExperienceTimelineProps> = ({expNum}) => {
   return (
     <Fade triggerOnce={true} duration={1200} fraction={0.35}>
       <ul className="grid grid-cols-1 gap-0 h-full timeline timeline-snap-icon timeline-vertical p-2">

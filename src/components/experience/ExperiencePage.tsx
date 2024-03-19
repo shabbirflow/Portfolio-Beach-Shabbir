@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import StarsCanvas from "../three/Stars";
 import ExperienceRightDiv from "./ExperienceRightDiv";
 import ExperienceTimeline from "./ExperienceTimeline";
@@ -8,6 +8,8 @@ import { ThemeContext } from "@/context/ThemeContext";
 interface ExperiencePageProps {}
 
 const ExperiencePage: FC<ExperiencePageProps> = ({}) => {
+  const [expNum, setExpNum] = useState<number>(0);  
+
   const context = useContext(ThemeContext);
   if (!context) throw new Error("THEME CONTEXT NOT FOUND");
   const { theme } = context;
@@ -19,10 +21,10 @@ const ExperiencePage: FC<ExperiencePageProps> = ({}) => {
         className="h-full w-full grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 gap-1 p-1"
       >
         <div className="w-full h-full">
-          <ExperienceRightDiv />
+          <ExperienceRightDiv expNum = {expNum} setExpNum = {setExpNum} />
         </div>
         <div className="p-1 w-full h-[87%] flex md:justify-items-start justify-center items-center">
-          <ExperienceTimeline />
+          <ExperienceTimeline expNum = {expNum} setExpNum = {setExpNum} />
         </div>
       </div>
       {/* <StarsCanvas /> */}

@@ -2,9 +2,13 @@ import { FC } from "react";
 import { experience } from "@/app/constants";
 import ExperienceCard from "./ExperienceCard";
 import { Fade } from "react-awesome-reveal";
-interface ExperienceRightDivProps {}
+import Carousel from "./Carousel";
+interface ExperienceRightDivProps {
+  expNum: number;
+  setExpNum: React.Dispatch<React.SetStateAction<number>>;
+}
 
-const ExperienceRightDiv: FC<ExperienceRightDivProps> = ({}) => {
+const ExperienceRightDiv: FC<ExperienceRightDivProps> = ({expNum, setExpNum}) => {
   return (
     <div className="w-full h-full">
       <Fade triggerOnce duration={700} className="z-10 cursor-pointer text-center md:text-start">
@@ -13,9 +17,7 @@ const ExperienceRightDiv: FC<ExperienceRightDivProps> = ({}) => {
       </h1>
       </Fade>
       <div className="w-full flex flex-col justify-center items-center">
-        {experience.map((x, ind) => {
-          return <ExperienceCard key={ind} {...x} />;
-        })}
+        <Carousel expNum = {expNum} setExpNum = {setExpNum} />
       </div>
     </div>
   );

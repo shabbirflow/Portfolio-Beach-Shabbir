@@ -97,6 +97,16 @@ export const experience = [
       "Configured Kubernetes Events Exporter, exporting logs and events using Elasticsearch stack.",
     ],
   },
+  {
+    title: "DevOps Intern",
+    company: "RhythmFlows Solutions Pvt. Ltd.",
+    time: "Jan 2024 - April 2024",
+    descBullets: [
+      "Created Docker images for Angular frontend & DjangoRestFramework API to streamline deployment.",
+      "Created CI / CD pipelines with Jenkins, achieving continuous integration & deployment.",
+      "Assisted in Alertmanager configuration with Prometheus & Grafana monitoring stack",
+    ],
+  },
 ];
 
 export const techSkills = {

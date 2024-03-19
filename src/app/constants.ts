@@ -97,7 +97,7 @@ export const techSkills = {
   languages: ["CPP", "JAVASCRIPT", "TYPESCRIPT", "Python"],
   frontend: ["HTML", "CSS", "REACT", "redux", "tailwind"],
   backend: ["express", "mongodb", "mysql", "nodejs"],
-  devOps: ["Docker", "Kubernetes", "Linux", "git"],
+  devOps: ["Docker", "Kubernetes", "Linux", "git", "jenkins"],
 };
 
 export const socialLinks = [

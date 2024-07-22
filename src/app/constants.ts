@@ -117,7 +117,7 @@ export const experience = [
       "Utilized Prometheus stack for monitoring cluster components, implemented Alertmanager for alerts on Slack",
       "Configured Kubernetes Events Exporter, exporting logs and events using Elasticsearch stack.",
     ],
-    image: 'lightbeam.jpeg'
+    image: 'lightbeam.png'
   },
 ];
 

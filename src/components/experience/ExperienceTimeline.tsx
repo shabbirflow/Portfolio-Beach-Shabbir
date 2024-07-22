@@ -34,7 +34,7 @@ const ExperienceTimeline: FC<ExperienceTimelineProps> = ({expNum}) => {
                 <div className="text-lg font-black text-primary">
                   {exp.title}
                 </div>
-                <p className="hidden md:block text-base-content">{exp.desc}</p>
+                {/* <p className="hidden md:block text-base-content">{exp.desc}</p> */}
               </div>
               <hr />
             </li>

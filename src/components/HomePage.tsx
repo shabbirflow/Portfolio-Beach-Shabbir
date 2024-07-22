@@ -75,6 +75,7 @@ const leftStuff = (
       <h1 className="md:text-[50px] text-[35px] font-bold lg:pt-24 md:pt-18 lg:mt-10 pt-14 cursor-pointer text-center">
         <span className="text-3xl lg:text-7xl md:text-5xl z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary md:text-center">
           {/* <Fade duration={200} cascade> */}
+          
             {stuff.title}
           {/* </Fade> */}
         </span>

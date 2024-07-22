@@ -59,13 +59,6 @@ export const projects = [
 
 export const experienceTimeLine = [
   {
-    title: "Rao Junior Science College",
-    desc: "HSC - 12th STD Diploma",
-    time: "2019 - 2021",
-    type: "education",
-    grade: "95.6%",
-  },
-  {
     title: "Pune Institute of Computer Technology",
     desc: "B.E. in Electronics & Telecommunication Eng.",
     time: "2021 - 2025",
@@ -78,33 +71,49 @@ export const experienceTimeLine = [
     time: "June 2023 - July 2023",
     type: "work",
   },
-    {
+  {
     title: "DevOps Intern @ Rhythmflows Solutions",
     desc: "Worked on creating Jenkins pipelines",
     time: "Jan 2024 - Current",
+    type: "work",
+  },
+  {
+    title: "Summer Intern @ Barclays",
+    desc: "Worked on ELK & CI/CD",
+    time: "June 2024 - July 2024",
     type: "work",
   },
 ];
 
 export const experience = [
   {
-    title: "DevOps Intern",
-    company: "LightBeam.ai",
-    time: "June 2023 - July 2023",
+    title: "Technology Summer Intern",
+    company: "Barclays",
+    time: "June 2024 - July 2024",
     descBullets: [
-      "Managed Kubernetes cluster on Linux VM, ensuring optimal functionality & collaboration using GitHub. ",
-      "Utilized Prometheus stack for monitoring cluster components, implemented Alertmanager for alerts on Slack",
-      "Configured Kubernetes Events Exporter, exporting logs and events using Elasticsearch stack.",
+      "Created Docker images for Angular frontend & DjangoRestFramework API to streamline deployment.",
+      "Created CI / CD pipelines with Jenkins, achieving continuous integration & deployment.",
+      "Assisted in Alertmanager configuration with Prometheus & Grafana monitoring stack",
     ],
   },
   {
     title: "DevOps Intern",
-    company: "RhythmFlows Solutions Pvt. Ltd.",
+    company: "RhythmFlows Solutions",
     time: "Jan 2024 - April 2024",
     descBullets: [
       "Created Docker images for Angular frontend & DjangoRestFramework API to streamline deployment.",
       "Created CI / CD pipelines with Jenkins, achieving continuous integration & deployment.",
       "Assisted in Alertmanager configuration with Prometheus & Grafana monitoring stack",
+    ],
+  },
+  {
+    title: "DevOps Intern",
+    company: "LightBeam.ai",
+    time: "June 2023 - July 2023",
+    descBullets: [
+      "Managed deployment of specific changes in ELK stack using Jenkins pipelines",
+      "Added environment specific configuration for SIT, NFT & PROD environments",
+      "Modified shell scripts to make deployment faster and more efficient",
     ],
   },
 ];

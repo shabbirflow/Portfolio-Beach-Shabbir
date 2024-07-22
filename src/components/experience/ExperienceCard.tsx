@@ -39,7 +39,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
             </h2>
             <div>
               <img
-                className="object-contain max-h-[4rem] max-w-sm"
+                className="object-contain h-[4rem] w-[8rem]"
                 src={"/experience/" + image}
                 alt={title}
               />

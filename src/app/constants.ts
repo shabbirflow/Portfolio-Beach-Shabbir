@@ -95,6 +95,7 @@ export const experience = [
       "Added environment specific configuration for Dev, SIT, NFT & PROD environments",
       "Modified shell scripts to make deployment of ELK stack components faster and more efficient",
     ],
+    image: 'barclays.png'
   },
   {
     title: "DevOps Intern",
@@ -105,6 +106,7 @@ export const experience = [
       "Created CI / CD pipelines with Jenkins, achieving continuous integration & deployment.",
       "Assisted in Alertmanager configuration with Prometheus & Grafana monitoring stack",
     ],
+    image: 'rhythmflows.jpeg'
   },
   {
     title: "DevOps Intern",
@@ -115,6 +117,7 @@ export const experience = [
       "Utilized Prometheus stack for monitoring cluster components, implemented Alertmanager for alerts on Slack",
       "Configured Kubernetes Events Exporter, exporting logs and events using Elasticsearch stack.",
     ],
+    image: 'lightbeam.jpeg'
   },
 ];
 

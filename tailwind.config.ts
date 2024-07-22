@@ -6,16 +6,18 @@ export const themeNames = [
   "light",
   "dark",
   "synthwave",
-  "retro",
+  "business",
   "cyberpunk",
-  "halloween",
+  "night",
   "forest",
   "aqua",
   "pastel",
-  "black",
+  "bumblebee",
   "luxury",
   "dracula",
   "acid",
+  "cmyk",
+  "lofi"
 ];
 
 const config: Config = {

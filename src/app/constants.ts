@@ -91,9 +91,9 @@ export const experience = [
     company: "Barclays",
     time: "June 2024 - July 2024",
     descBullets: [
-      "Created Docker images for Angular frontend & DjangoRestFramework API to streamline deployment.",
-      "Created CI / CD pipelines with Jenkins, achieving continuous integration & deployment.",
-      "Assisted in Alertmanager configuration with Prometheus & Grafana monitoring stack",
+      "Implemented deployment of specific changes using Jenkins by accessing files changed from diff in a merge event.",
+      "Added environment specific configuration for Dev, SIT, NFT & PROD environments",
+      "Modified shell scripts to make deployment of ELK stack components faster and more efficien",
     ],
   },
   {
@@ -111,9 +111,9 @@ export const experience = [
     company: "LightBeam.ai",
     time: "June 2023 - July 2023",
     descBullets: [
-      "Managed deployment of specific changes in ELK stack using Jenkins pipelines",
-      "Added environment specific configuration for SIT, NFT & PROD environments",
-      "Modified shell scripts to make deployment faster and more efficient",
+      "Managed Kubernetes cluster on Linux VM, ensuring optimal functionality & collaboration using GitHub. ",
+      "Utilized Prometheus stack for monitoring cluster components, implemented Alertmanager for alerts on Slack",
+      "Configured Kubernetes Events Exporter, exporting logs and events using Elasticsearch stack.",
     ],
   },
 ];

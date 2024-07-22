@@ -93,7 +93,7 @@ export const experience = [
     descBullets: [
       "Implemented deployment of specific changes using Jenkins by accessing files changed from diff in a merge event.",
       "Added environment specific configuration for Dev, SIT, NFT & PROD environments",
-      "Modified shell scripts to make deployment of ELK stack components faster and more efficien",
+      "Modified shell scripts to make deployment of ELK stack components faster and more efficient",
     ],
   },
   {

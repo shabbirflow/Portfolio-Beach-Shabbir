@@ -13,7 +13,7 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<string>('lofi');
+  const [theme, setTheme] = useState<string>('cmyk');
 
   const contextValue: ThemeContextProps = {
     theme,

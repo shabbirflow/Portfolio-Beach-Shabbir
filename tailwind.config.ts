@@ -12,7 +12,6 @@ export const themeNames = [
   "forest",
   "aqua",
   "pastel",
-  "bumblebee",
   "luxury",
   "dracula",
   "acid",

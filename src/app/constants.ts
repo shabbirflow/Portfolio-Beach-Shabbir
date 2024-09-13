@@ -74,7 +74,7 @@ export const experienceTimeLine = [
   {
     title: "DevOps Intern @ Rhythmflows Solutions",
     desc: "Worked on creating Jenkins pipelines",
-    time: "Jan 2024 - Current",
+    time: "Jan 2024 - April 2024",
     type: "work",
   },
   {

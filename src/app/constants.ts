@@ -83,6 +83,12 @@ export const experienceTimeLine = [
     time: "June 2024 - July 2024",
     type: "work",
   },
+    {
+    title: "Graduate Trainee @ TIAA (currently)",
+    // desc: "Worked on ELK & CI/CD",
+    time: "July 2025 - Present",
+    type: "work",
+  }
 ];
 
 export const experience = [

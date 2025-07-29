@@ -84,7 +84,7 @@ export const experienceTimeLine = [
     type: "work",
   },
     {
-    title: "Graduate Trainee @ TIAA (currently)",
+    title: "Graduate Trainee @ TIAA (current)",
     // desc: "Worked on ELK & CI/CD",
     time: "July 2025 - Present",
     type: "work",
@@ -92,6 +92,15 @@ export const experienceTimeLine = [
 ];
 
 export const experience = [
+    {
+    title: "Graduate Trainee",
+    company: "TIAA",
+    time: "July 2025 - Current",
+    descBullets: [
+      "Trainings & Induction in progress... I'll update this section soon! Give me a few weeks :)",
+    ],
+    image: 'tiaa_logo.svg'
+  },
   {
     title: "Technology Summer Intern",
     company: "Barclays",

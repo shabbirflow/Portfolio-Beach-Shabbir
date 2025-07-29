@@ -30,7 +30,7 @@ const ExperienceTimeline: FC<ExperienceTimelineProps> = ({expNum}) => {
                     : "timeline-end text-start"
                 } mb-10`}
               >
-                <time className="font-mono italic text-accent">{exp.time}</time>
+                <time className={`font-mono italic text-accent ${ind == 0 ? "text-shadow-yellow-500 text-shadow-sm font-extrabold drop-shadow-lg tracking-tight": ""}`}>{exp.time}</time>
                 <div className="text-lg font-black text-primary">
                   {exp.title}
                 </div>

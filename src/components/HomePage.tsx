@@ -28,39 +28,6 @@ const HomePage: FC<HomePageProps> = ({}) => {
       <div className="w-full h-full flex flex-col md:grid md:grid-cols-2 md:grid-rows-1 gap-1">
         <div className="flex flex-col items-center h-full">{leftStuff}</div>
         {/* <div className="flex flex-row justify-center items-center md:hidden "> */}
-        <div className="flex justify-center items-center md:hidden w-full">
-          <div className="mockup-code m-6 h-[80%] w-[90%] p-3 z-40">
-            {/* w-[80vw] */}
-            {/* {stuff.aboutCodeLines.map((x, ind) => {
-              return (
-                <pre data-prefix="$" key={ind} className="text-xs md:text-base">
-                  <code>{x}</code>
-                </pre>
-              );
-            })} */}
-            <TypeAnimation
-              style={{ zIndex: 50 }}
-              sequence={[
-                stuff.aboutCodeLines.reduce(
-                  (acc: string, curr: string, ind) => {
-                    // if (ind >= 2) {
-                    //   return acc;
-                    // }
-                    const ele = acc.length ? `\n$   ${curr}` : `$   ${curr}`;
-                    return (acc += ele);
-                  },
-                  ""
-                ),
-                1000,
-              ]}
-              repeat={Infinity}
-              className="whitespace-pre w-fit font-mono text-xs z-50"
-            />
-            {/* <h1 className="whitespace-pre w-fit font-mono text-xs z-50">
-              Shabbir Kaderi
-            </h1> */}
-          </div>
-        </div>
         {/* <div className="h-full w-full flex flex-col justify-center items-center ">
           <NeonCanvas />
         </div> */}
@@ -82,20 +49,82 @@ const HomePage: FC<HomePageProps> = ({}) => {
 
 export default HomePage;
 
-const leftStuff = (
-  <>
-    <div className="p-5 md:pb-16 flex flex-col gap-5 z-[10] md:w-[40vw] w-full absolute">
-      <h1 className="hover:scale-[1.05] transition-transform duration-150 md:text-[50px] text-[35px] font-bold lg:pt-24 md:pt-18 lg:mt-10 pt-14 cursor-pointer text-center">
-        <span className="text-3xl lg:text-7xl md:text-5xl z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary md:text-center">
-          {/* <Fade duration={200} cascade> */}
+// const leftStuff = (
+//   <>
+//     {/* <div className="p-5 md:pb-16 flex flex-col gap-5 z-[10] md:w-[40vw] w-full absolute"> */}
+//     <div className="p-5 md:pb-16 flex flex-col gap-5 z-[10] md:w-[40vw] w-full md:absolute relative">
+//       <h1 className="hover:scale-[1.05] transition-transform duration-150 md:text-[50px] text-[35px] font-bold lg:pt-24 md:pt-18 lg:mt-10 pt-14 cursor-pointer text-center">
+//         <span className="text-3xl lg:text-7xl md:text-5xl z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary md:text-center">
+//           {/* <Fade duration={200} cascade> */}
 
-          {stuff.title}
-          {/* </Fade> */}
-        </span>
-      </h1>
-      <div className="hover:scale-[1.05] transition-transform duration-150 mockup-code md:block hidden lg:m-4 md:m-2 lg:p-8 p-4 w-full relative h-48 scrollbar scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600">
+//           {stuff.title}
+//           {/* </Fade> */}
+//         </span>
+//       </h1>
+//       <div className="hover:scale-[1.05] transition-transform duration-150 mockup-code md:block hidden lg:m-4 md:m-2 lg:p-8 p-4 w-full relative h-48 scrollbar scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600">
+//         <TypeAnimation
+//           // style={{ whiteSpace: "pre-line" }}
+//           sequence={[
+//             stuff.aboutCodeLines.reduce((acc: string, curr: string) => {
+//               const ele = acc.length ? `\n$   ${curr}` : `$   ${curr}`;
+//               return (acc += ele);
+//             }, ""),
+//             1000,
+//           ]}
+//           repeat={Infinity}
+//           className="whitespace-pre w-fit font-mono lg:text-base md:text-xs"
+//         />
+//       </div>
+//       <div className="w-full flex flex-row justify-evenly items-center md:pt-4 lg:pt-8">
+//         <button
+//           className="btn btn-md lg:btn-lg btn-primary shadow-md shadow-accent hover:scale-[1.05] transition-transform duration-150"
+//           onClick={(e) => {
+//             e.preventDefault();
+//             scrollToId("experience");
+//           }}
+//         >
+//           See More <ChevronDown className="md:w-6 md:h-6 h-3 w-3" />
+//         </button>
+//         <a
+//           role="button"
+//           className="btn btn-md lg:btn-lg btn-secondary shadow-md shadow-accent hover:scale-[1.05] transition-transform duration-150"
+//           target="_blank"
+//           href={stuff.cvURL}
+//         >
+//           Download CV <FileText className="md:w-6 md:h-6 h-3 w-3" />
+//         </a>
+//       </div>
+//     </div>
+//   </>
+// );
+
+const leftStuff = (
+  <div className="p-5 md:pb-16 flex flex-col gap-5 z-[10] md:w-[40vw] w-full md:absolute relative">
+    <h1 className="hover:scale-[1.05] transition-transform duration-150 md:text-[50px] text-[35px] font-bold lg:pt-24 md:pt-18 lg:mt-10 pt-14 cursor-pointer text-center">
+      <span className="text-3xl lg:text-7xl md:text-5xl z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary md:text-center">
+        {stuff.title}
+      </span>
+    </h1>
+
+    {/* Desktop Code Mockup */}
+    <div className="hover:scale-[1.05] transition-transform duration-150 mockup-code md:block hidden lg:m-4 md:m-2 lg:p-8 p-4 w-full relative h-48 scrollbar scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600">
+      <TypeAnimation
+        sequence={[
+          stuff.aboutCodeLines.reduce((acc: string, curr: string) => {
+            const ele = acc.length ? `\n$   ${curr}` : `$   ${curr}`;
+            return (acc += ele);
+          }, ""),
+          1000,
+        ]}
+        repeat={Infinity}
+        className="whitespace-pre w-fit font-mono lg:text-base md:text-xs"
+      />
+    </div>
+
+    {/* Mobile Code Mockup */}
+    <div className="md:hidden flex justify-center w-full">
+      <div className="mockup-code m-3 p-3 z-40 w-[90%] max-w-[400px]">
         <TypeAnimation
-          // style={{ whiteSpace: "pre-line" }}
           sequence={[
             stuff.aboutCodeLines.reduce((acc: string, curr: string) => {
               const ele = acc.length ? `\n$   ${curr}` : `$   ${curr}`;
@@ -104,29 +133,29 @@ const leftStuff = (
             1000,
           ]}
           repeat={Infinity}
-          className="whitespace-pre w-fit font-mono lg:text-base md:text-xs"
+          className="whitespace-pre w-full font-mono text-xs z-50"
         />
       </div>
-      <div className="w-full flex flex-row justify-evenly items-center md:pt-4 lg:pt-8">
-        <button
-          className="btn btn-md lg:btn-lg btn-primary shadow-md shadow-accent hover:scale-[1.05] transition-transform duration-150"
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToId("experience");
-          }}
-        >
-          See More <ChevronDown className="md:w-6 md:h-6 h-3 w-3" />
-        </button>
-        <a
-          role="button"
-          className="btn btn-md lg:btn-lg btn-secondary shadow-md shadow-accent hover:scale-[1.05] transition-transform duration-150"
-          target="_blank"
-          href={stuff.cvURL}
-        >
-          Download CV <FileText className="md:w-6 md:h-6 h-3 w-3" />
-        </a>
-      </div>
     </div>
-    <button className="btn btn-primary">Button</button>
-  </>
+
+    <div className="w-full flex flex-row justify-evenly items-center md:pt-4 lg:pt-8">
+      <button
+        className="btn btn-md lg:btn-lg btn-primary shadow-md shadow-accent hover:scale-[1.05] transition-transform duration-150"
+        onClick={(e) => {
+          e.preventDefault();
+          scrollToId("experience");
+        }}
+      >
+        See More <ChevronDown className="md:w-6 md:h-6 h-3 w-3" />
+      </button>
+      <a
+        role="button"
+        className="btn btn-md lg:btn-lg btn-secondary shadow-md shadow-accent hover:scale-[1.05] transition-transform duration-150"
+        target="_blank"
+        href={stuff.cvURL}
+      >
+        Download CV <FileText className="md:w-6 md:h-6 h-3 w-3" />
+      </a>
+    </div>
+  </div>
 );

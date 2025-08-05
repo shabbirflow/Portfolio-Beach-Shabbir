@@ -7,7 +7,7 @@ import Projects from "@/components/projects/ProjectsPage";
 import SkillsPage from "@/components/skills/SkillsPage";
 import ContactPage from "@/components/contact/ContactPage";
 import ParticlesComponent from "@/components/Particles";
-import HomePage2 from "@/components/HomePage2";
+// import HomePage2 from "@/components/HomePage2";
 export default function Home() {
   const context = useContext(ThemeContext);
   if (!context) throw new Error("THEME CONTEXT NOT FOUND");

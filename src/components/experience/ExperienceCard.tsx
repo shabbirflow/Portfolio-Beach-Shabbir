@@ -31,7 +31,8 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
       fraction={0.35}
       className="w-fit flex flex-col justify-center items-center"
     >
-      <div className="z-10 m-2 p-2 card w-[78%] bg-base-100 shadow-md shadow-accent cursor-pointer">
+      {/* <div className="z-10 m-2 p-2 card w-[78%] bg-base-100 shadow-md shadow-accent cursor-pointer"> */}
+      <div className="relative z-10 m-2 p-2 card w-[78%] bg-base-100 shadow-md shadow-accent cursor-pointer">
         <div className="card-body">
           <div className="flex flex-row justify-between align-middle items-center">
             <h2 className="card-title text-xl font-bold inline-flex">

@@ -21,11 +21,14 @@ const HomePage: FC<HomePageProps> = ({}) => {
   const context = useContext(ThemeContext);
   if (!context) throw new Error("THEME CONTEXT NOT FOUND");
   const { theme, setTheme } = context;
+  // return <h1>HAHAHAH</h1>
   return (
     <div className="w-screen h-screen relative" data-theme={theme}>
-      <div className="grid w-full h-full md:grid-cols-2 md:grid-rows-1 grid-rows-3 grid-cols-1 gap-1">
+      {/* <div className="grid w-full h-full md:grid-cols-2 md:grid-rows-1 grid-rows-3 grid-cols-1 gap-1"> */}
+      <div className="w-full h-full flex flex-col md:grid md:grid-cols-2 md:grid-rows-1 gap-1">
         <div className="flex flex-col items-center h-full">{leftStuff}</div>
-        <div className="flex flex-row justify-center items-center md:hidden ">
+        {/* <div className="flex flex-row justify-center items-center md:hidden "> */}
+        <div className="flex justify-center items-center md:hidden w-full">
           <div className="mockup-code m-6 h-[80%] w-[90%] p-3 z-40">
             {/* w-[80vw] */}
             {/* {stuff.aboutCodeLines.map((x, ind) => {
@@ -61,12 +64,13 @@ const HomePage: FC<HomePageProps> = ({}) => {
         {/* <div className="h-full w-full flex flex-col justify-center items-center ">
           <NeonCanvas />
         </div> */}
-        <div className="h-full w-full flex flex-col justify-center items-center">
+        {/* <div className="h-full w-full flex flex-col justify-center items-center"> */}
+        <div className="flex justify-center items-center w-full h-full px-4">
           <Fade duration={1500} triggerOnce>
             <img
               src="/models/main_bg_remove.png"
               alt="Retro TVs"
-              className="w-[90%] max-w-[800px] h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] cursor-pointer scale-110 hover:scale-[1.15] transition-transform duration-150"
+              className="w-full max-w-[400px] md:max-w-[600px] lg:max-w-[800px] h-auto drop-shadow-[0_20px_40px_5px_rgba(255,215,0,0.7)] cursor-pointer scale-100 hover:scale-[1.05] transition-transform duration-200"
             />
           </Fade>
         </div>

@@ -12,7 +12,8 @@ const Carousel: FC<CarouselProps> = ({ expNum, setExpNum }) => {
 
   return (
     <div className="carousel w-full">
-      <div className="carousel-item relative w-full">
+      {/* <div className="carousel-item relative w-full"> */}
+      <div className="carousel-item w-full relative z-0">
         <ExperienceCard {...experience[expNum]} />
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <button className="btn btn-circle z-[99]" onClick={() => setExpNum(expNum != 0 ? expNum - 1 : maxExp-1)}>

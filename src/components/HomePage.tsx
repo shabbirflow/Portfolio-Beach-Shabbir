@@ -123,7 +123,7 @@ const leftStuff = (
 
     {/* Mobile Code Mockup */}
     <div className="md:hidden flex justify-center w-full">
-      <div className="mockup-code m-3 p-3 z-40 w-[90%] max-w-[400px]">
+      <div className="mockup-code m-3 p-3 z-40 w-full max-w-[400px]">
         <TypeAnimation
           sequence={[
             stuff.aboutCodeLines.reduce((acc: string, curr: string) => {

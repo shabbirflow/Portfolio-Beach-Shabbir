@@ -39,7 +39,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
             </h2>
             <div>
               <img
-                className="object-contain h-[4rem] w-[8rem]"
+                className="object-contain h-[4rem] w-[8rem] [filter:drop-shadow(0_0_12px_rgba(255,255,255,0.4))] cursor-pointer hover:scale-[1.05] transition-transform duration-150"
                 src={"/experience/" + image}
                 alt={title}
               />
@@ -55,7 +55,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
           <Slide fraction={1} cascade triggerOnce damping={0.5}>
             {descBullets.map((desc, ind) => (
               <div className="chat chat-start" key={desc}>
-                <div className="chat-bubble md:text-sm lg:text-base ">
+                <div className="chat-bubble md:text-sm lg:text-base cursor-pointer hover:scale-[1.05] transition-transform duration-150">
                   {desc}
                 </div>
               </div>

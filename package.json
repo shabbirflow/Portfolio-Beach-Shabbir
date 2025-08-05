@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "^11.14.0",
     "@react-three/drei": "^9.92.3",
     "@react-three/fiber": "^8.15.12",
     "@tsparticles/engine": "^3.2.1",
@@ -27,7 +27,7 @@
     "maath": "^0.10.4",
     "next": "14.0.3",
     "react": "^18",
-    "react-awesome-reveal": "^4.2.7",
+    "react-awesome-reveal": "^4.3.1",
     "react-dom": "^18",
     "react-parallax-tilt": "^1.7.177",
     "react-particles": "^2.12.2",

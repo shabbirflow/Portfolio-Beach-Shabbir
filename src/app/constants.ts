@@ -6,7 +6,8 @@ export const stuff = {
     "solving problems, crafting cool web presences",
     "optimizing workflows for seamless delivery",
   ],
-  cvURL: "https://drive.google.com/drive/folders/1TUOf5S2SefMvBxPV2rKieBegMnaTGJCL?usp=sharing",
+  cvURL:
+    "https://drive.google.com/drive/folders/1TUOf5S2SefMvBxPV2rKieBegMnaTGJCL?usp=sharing",
   email: "kaderishabbir@gmail.com",
   location: "Pune, Maharashtra, India",
   phone: "+91 7057952529",
@@ -59,16 +60,15 @@ export const projects = [
 
 export const experienceTimeLine = [
   {
-    title: "Pune Institute of Computer Technology",
-    desc: "B.E. in Electronics & Telecommunication Eng.",
-    time: "2021 - 2025",
-    type: "education",
-    grade: "8.1 CGPA",
+    title: "Graduate Trainee @ TIAA (current)",
+    // desc: "Worked on ELK & CI/CD",
+    time: "July 2025 - Present",
+    type: "work",
   },
   {
-    title: "DevOps Intern @ LightBeam.ai",
-    desc: "Worked on Prometheus stack & Alermanager",
-    time: "June 2023 - July 2023",
+    title: "Summer Intern @ Barclays",
+    desc: "Worked on ELK & CI/CD",
+    time: "June 2024 - July 2024",
     type: "work",
   },
   {
@@ -78,28 +78,29 @@ export const experienceTimeLine = [
     type: "work",
   },
   {
-    title: "Summer Intern @ Barclays",
-    desc: "Worked on ELK & CI/CD",
-    time: "June 2024 - July 2024",
+    title: "DevOps Intern @ LightBeam.ai",
+    desc: "Worked on Prometheus stack & Alermanager",
+    time: "June 2023 - July 2023",
     type: "work",
   },
-    {
-    title: "Graduate Trainee @ TIAA (current)",
-    // desc: "Worked on ELK & CI/CD",
-    time: "July 2025 - Present",
-    type: "work",
-  }
+  {
+    title: "Pune Institute of Computer Technology",
+    desc: "B.E. in Electronics & Telecommunication Eng.",
+    time: "2021 - 2025",
+    type: "education",
+    grade: "8.1 CGPA",
+  },
 ];
 
 export const experience = [
-    {
+  {
     title: "Graduate Trainee",
     company: "TIAA",
     time: "July 2025 - Current",
     descBullets: [
       "Trainings & Induction in progress... I'll update this section soon! Give me a few weeks :)",
     ],
-    image: 'tiaa_logo.svg'
+    image: "tiaa_logo.svg",
   },
   {
     title: "Technology Summer Intern",
@@ -110,7 +111,7 @@ export const experience = [
       "Added environment specific configuration for Dev, SIT, NFT & PROD environments",
       "Modified shell scripts to make deployment of ELK stack components faster and more efficient",
     ],
-    image: 'barclays.png'
+    image: "barclays.png",
   },
   {
     title: "DevOps Intern",
@@ -121,7 +122,7 @@ export const experience = [
       "Created CI / CD pipelines with Jenkins, achieving continuous integration & deployment.",
       "Assisted in Alertmanager configuration with Prometheus & Grafana monitoring stack",
     ],
-    image: 'rhythmflows.jpeg'
+    image: "rhythmflows.jpeg",
   },
   {
     title: "DevOps Intern",
@@ -132,12 +133,12 @@ export const experience = [
       "Utilized Prometheus stack for monitoring cluster components, implemented Alertmanager for alerts on Slack",
       "Configured Kubernetes Events Exporter, exporting logs and events using Elasticsearch stack.",
     ],
-    image: 'lightbeam.png'
+    image: "lightbeam.png",
   },
 ];
 
 export const techSkills = {
-  languages: ["CPP", "JAVASCRIPT", "TYPESCRIPT", "Python"],
+  languages: ["CPP", "JAVA", "JAVASCRIPT", "Python"],
   frontend: ["HTML", "CSS", "REACT", "redux", "tailwind"],
   backend: ["express", "mongodb", "mysql", "nodejs"],
   devOps: ["Docker", "Kubernetes", "Linux", "git", "jenkins"],

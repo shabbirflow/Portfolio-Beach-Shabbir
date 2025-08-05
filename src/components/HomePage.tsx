@@ -58,8 +58,17 @@ const HomePage: FC<HomePageProps> = ({}) => {
             </h1> */}
           </div>
         </div>
-        <div className="h-full w-full flex flex-col justify-center items-center ">
+        {/* <div className="h-full w-full flex flex-col justify-center items-center ">
           <NeonCanvas />
+        </div> */}
+        <div className="h-full w-full flex flex-col justify-center items-center">
+          <Fade duration={1500} triggerOnce>
+            <img
+              src="/models/main_bg_remove.png"
+              alt="Retro TVs"
+              className="w-[90%] max-w-[800px] h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] cursor-pointer scale-110 hover:scale-[1.15] transition-transform duration-150"
+            />
+          </Fade>
         </div>
       </div>
       {/* <StarsCanvas /> */}
@@ -71,16 +80,16 @@ export default HomePage;
 
 const leftStuff = (
   <>
-    <div className="p-5 md:pb-16 flex flex-col gap-5 z-[10] md:w-[40vw] w-full absolute" >
-      <h1 className="md:text-[50px] text-[35px] font-bold lg:pt-24 md:pt-18 lg:mt-10 pt-14 cursor-pointer text-center">
+    <div className="p-5 md:pb-16 flex flex-col gap-5 z-[10] md:w-[40vw] w-full absolute">
+      <h1 className="hover:scale-[1.05] transition-transform duration-150 md:text-[50px] text-[35px] font-bold lg:pt-24 md:pt-18 lg:mt-10 pt-14 cursor-pointer text-center">
         <span className="text-3xl lg:text-7xl md:text-5xl z-10 text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary md:text-center">
           {/* <Fade duration={200} cascade> */}
-          
-            {stuff.title}
+
+          {stuff.title}
           {/* </Fade> */}
         </span>
       </h1>
-      <div className="mockup-code md:block hidden lg:m-4 md:m-2 lg:p-8 p-4 w-full relative h-48 scrollbar scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600">
+      <div className="hover:scale-[1.05] transition-transform duration-150 mockup-code md:block hidden lg:m-4 md:m-2 lg:p-8 p-4 w-full relative h-48 scrollbar scrollbar-track-rounded-md scrollbar-thumb-rounded-md scrollbar-track-stone-400 scrollbar-thumb-slate-600">
         <TypeAnimation
           // style={{ whiteSpace: "pre-line" }}
           sequence={[
@@ -96,7 +105,7 @@ const leftStuff = (
       </div>
       <div className="w-full flex flex-row justify-evenly items-center md:pt-4 lg:pt-8">
         <button
-          className="btn btn-md lg:btn-lg btn-primary shadow-md shadow-accent"
+          className="btn btn-md lg:btn-lg btn-primary shadow-md shadow-accent hover:scale-[1.05] transition-transform duration-150"
           onClick={(e) => {
             e.preventDefault();
             scrollToId("experience");
@@ -106,7 +115,7 @@ const leftStuff = (
         </button>
         <a
           role="button"
-          className="btn btn-md lg:btn-lg btn-secondary shadow-md shadow-accent"
+          className="btn btn-md lg:btn-lg btn-secondary shadow-md shadow-accent hover:scale-[1.05] transition-transform duration-150"
           target="_blank"
           href={stuff.cvURL}
         >
@@ -117,4 +126,3 @@ const leftStuff = (
     <button className="btn btn-primary">Button</button>
   </>
 );
-

@@ -7,24 +7,19 @@ interface SkillImageProps {
 
 const SkillImage: FC<SkillImageProps> = ({ imgUrl }) => {
   return (
-    <div className="avatar z-10 cursor-pointer drop-shadow-lg h-fit">
+    <div className="z-10 cursor-pointer drop-shadow-lg h-fit">
       <Tilt
-        className="parallax-effect-glare-scale"
-        perspective={500}
+        className="parallax-effect-glare-scale rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-xl transition-colors duration-300 hover:bg-white/10"
+        perspective={1000}
         glareEnable={true}
-        glareMaxOpacity={0.45}
-        scale={1.07}
+        glareMaxOpacity={0.2}
+        scale={1.05}
       >
-        <div className="lg:w-[6.5rem] lg:h-[6.5rem] lg:max-h-[9rem] lg:hover:max-w-[7.5rem] md:w-[5rem] md:h-[5rem] md:max-h-[7rem] md:hover:max-w-[7rem] w-12 h-12 max-h-[4rem] overflow-hidden p-0">
+        <div className="flex items-center justify-center lg:w-[6.5rem] lg:h-[6.5rem] md:w-[5rem] md:h-[5rem] w-14 h-14 p-3 overflow-hidden">
           <img
             src={imgUrl}
-            className="w-auto h-auto"
+            className="w-full h-full object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.2)]"
             alt="skill"
-            // layout="fill"
-            // objectFit="contain"
-            // className="object-cover"
-            // quality={100}
-            // position="relative"
           />
         </div>
       </Tilt>

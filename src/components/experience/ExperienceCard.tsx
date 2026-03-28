@@ -1,13 +1,5 @@
 import { FC } from "react";
-import {
-  Fade,
-  Bounce,
-  JackInTheBox,
-  Hinge,
-  AttentionSeeker,
-  Slide,
-  Roll,
-} from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 interface ExperienceCardProps {
   title: string;
@@ -27,36 +19,36 @@ const ExperienceCard: FC<ExperienceCardProps> = ({
   return (
     <Fade
       triggerOnce={true}
-      duration={1000}
-      fraction={0.35}
-      className="w-fit flex flex-col justify-center items-center"
+      duration={800}
+      fraction={0.2}
+      className="w-full flex flex-col justify-center items-center"
     >
-      {/* <div className="z-10 m-2 p-2 card w-[78%] bg-base-100 shadow-md shadow-accent cursor-pointer"> */}
-      <div className="relative z-10 m-2 p-2 card w-[78%] bg-base-100 shadow-md shadow-accent cursor-pointer">
-        <div className="card-body">
-          <div className="flex flex-row justify-between align-middle items-center">
-            <h2 className="card-title text-xl font-bold inline-flex">
+      <div className="z-10 m-2 p-0 card w-full max-w-xl bg-white/5 backdrop-blur-md border border-white/10 shadow-xl transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_rgba(var(--p),0.15)] cursor-pointer">
+        <div className="card-body p-5 gap-3">
+          <div className="flex flex-row justify-between items-center gap-3">
+            <h3 className="card-title text-lg font-bold leading-tight">
               {title}
-            </h2>
-            <div>
+            </h3>
+            <div className="bg-white/90 dark:bg-white p-1.5 rounded-lg shadow-sm flex items-center justify-center">
               <img
-                className="object-contain h-[4rem] w-[8rem] [filter:drop-shadow(0_0_12px_rgba(255,255,255,0.4))] cursor-pointer hover:scale-[1.05] transition-transform duration-150"
+                className="object-contain h-10 w-20 flex-shrink-0"
                 src={"/experience/" + image}
-                alt={title}
+                alt={`${company} logo`}
               />
             </div>
           </div>
 
-          <div className="flex flex-row justify-between">
-            <p className="font-semibold inline text-start text-lg ">
-              {company}
-            </p>
-            <p className="inline text-end italic">{time}</p>
+          <div className="flex flex-row justify-between items-center text-sm">
+            <p className="font-semibold">{company}</p>
+            <p className="italic opacity-70">{time}</p>
           </div>
-          <Slide fraction={1} cascade triggerOnce damping={0.5}>
-            {descBullets.map((desc, ind) => (
+
+          <div className="divider my-0" />
+
+          <Slide fraction={0.5} cascade triggerOnce damping={0.3}>
+            {descBullets.map((desc) => (
               <div className="chat chat-start" key={desc}>
-                <div className="chat-bubble md:text-sm lg:text-base cursor-pointer hover:scale-[1.05] transition-transform duration-150">
+                <div className="chat-bubble chat-bubble-primary text-sm">
                   {desc}
                 </div>
               </div>

@@ -46,7 +46,7 @@ export const projects = [
     githubURL: "https://github.com/shabbirflow/SwiftServe",
     liveURL: "https://youtu.be/B2qUnOyspUQp",
     description:
-      "A deployment service to deploy your React Websites ( Js or Ts ) to the internet & take your projects online with speed.",
+      "A deployment service to deploy your static websites to the internet & take your projects online with speed.",
   },
   {
     title: "Sorting Visualizer",
@@ -54,7 +54,7 @@ export const projects = [
     githubURL: "https://github.com/shabbirflow/Sorting-Visualizer",
     liveURL: "https://sort-visualize.netlify.app/",
     description:
-      "A beautiful visualizer for DSA sorting algorithms made with React and ChartJS. Visualize 5 of the most important sorting algorithms",
+      "A beautiful visualizer for sorting algorithms made with React and ChartJS to visualize 5 of the most important sorting algorithms",
   },
 ];
 
@@ -98,7 +98,8 @@ export const experience = [
     company: "TIAA",
     time: "July 2025 - Current",
     descBullets: [
-      "Trainings & Induction in progress... I'll update this section soon! Give me a few weeks :)",
+      "Developed client-facing demo applications using Java, Spring Boot, and Angular to model enterprise workflows for retirement planning and investment management enabling realistic stakeholder and sales demonstrations",
+      "Built mock backend services using Redis / ElastiCache and deployed on Tomcat, decoupling demos from live systems and supporting concurrent demos with predictable behavior without production access."
     ],
     image: "tiaa_logo.svg",
   },

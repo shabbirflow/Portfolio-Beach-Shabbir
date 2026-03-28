@@ -1,34 +1,31 @@
 "use client";
 import { FC } from "react";
-import { useContext } from "react";
-import { ThemeContext } from "@/context/ThemeContext";
 import { ChevronDown } from "lucide-react";
 import { pages } from "../app/constants";
 import Link from "next/link";
 import ThemeDropDown from "./theme/ThemeDropDown";
+import { useTheme } from "@/context/ThemeContext";
 
-interface NavbarProps {}
+const Navbar: FC = () => {
+  const { theme } = useTheme();
 
-const Navbar: FC<NavbarProps> = ({}) => {
-  const context = useContext(ThemeContext);
-  if (!context) throw new Error("THEME CONTEXT NOT FOUND");
-  const { theme, setTheme } = context;
   return (
-    <div
-      className="navbar bg-base-100 shadow-lg p-0 fixed top-0 z-50"
+    <nav
+      className="navbar bg-base-100/40 backdrop-blur-md shadow-lg p-0 fixed top-0 z-50"
       data-theme={theme}
+      aria-label="Main navigation"
     >
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden" aria-label="Open menu">
             <ChevronDown size={20} />
           </div>
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            {pages.map((page, ind) => (
-              <li key={ind}>
+            {pages.map((page) => (
+              <li key={page.name}>
                 <Link
                   href="/"
                   onClick={(e) => {
@@ -57,8 +54,8 @@ const Navbar: FC<NavbarProps> = ({}) => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          {pages.map((page, ind) => (
-            <li key={ind}>
+          {pages.map((page) => (
+            <li key={page.name}>
               <Link
                 href="/"
                 onClick={(e) => {
@@ -75,7 +72,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
       <div className="navbar-end">
         <ThemeDropDown />
       </div>
-    </div>
+    </nav>
   );
 };
 

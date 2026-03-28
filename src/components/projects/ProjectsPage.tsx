@@ -1,34 +1,31 @@
+"use client";
 import { FC } from "react";
 import { projects } from "@/app/constants";
-import { ThemeContext } from "@/context/ThemeContext";
-import { useContext } from "react";
-import StarsCanvas from "../three/Stars";
-import Projectcard from "./projectcard";
-import { Fade, Slide, Roll } from "react-awesome-reveal";
+import { useTheme } from "@/context/ThemeContext";
+import ProjectCard from "./ProjectCard";
+import { Fade } from "react-awesome-reveal";
 
-interface ProjectsProps {}
-
-const Projects: FC<ProjectsProps> = ({}) => {
-  const context = useContext(ThemeContext);
-  if (!context) throw new Error("THEME CONTEXT NOT FOUND");
-  const { theme } = context;
+const Projects: FC = () => {
+  const { theme } = useTheme();
   return (
-    <div className="w-screen md:h-screen relative h-fit">
-      {/* <StarsCanvas /> */}
+    <div
+      className="w-full min-h-screen py-20 px-4 md:px-12 flex flex-col items-center !bg-transparent"
+      data-theme={theme}
+      id="projects"
+    >
       <div
-        data-theme={theme}
-        className="flex flex-col items-center w-full md:h-full bg-cover bg-center h-fit"
+        className="flex flex-col items-center w-full bg-cover bg-center py-4"
       >
-        <Fade triggerOnce duration={700} className="z-10 cursor-pointer">
-          <h1 className="lg:text-5xl md:3xl text-2xl z-10 cursor-pointer md:hover:scale-105 hover:drop-shadow-lg hover:shadow-base-200 font-bold md:p-4 p-2 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent transition duration-150">
+        <Fade triggerOnce duration={700} className="z-10">
+          <h2 className="lg:text-5xl md:text-3xl text-2xl z-10 font-bold p-4 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
             Projects
-          </h1>
+          </h2>
         </Fade>
-        <div className="w-full grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-4 gap-2 gap-y-6">
-          <Fade cascade damping={0.8} duration={400} triggerOnce>
-            {projects.map((project, ind) => (
-              <div className="m-2 flex justify-center" key={ind}>
-                <Projectcard {...project} />
+        <div className="w-full grid md:grid-cols-2 xl:grid-cols-2 grid-cols-1 gap-6 px-4 md:px-8">
+          <Fade cascade damping={0.6} duration={400} triggerOnce>
+            {projects.map((project) => (
+              <div className="flex justify-center" key={project.title}>
+                <ProjectCard {...project} />
               </div>
             ))}
           </Fade>

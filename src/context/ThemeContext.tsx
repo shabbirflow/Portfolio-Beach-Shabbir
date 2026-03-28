@@ -13,11 +13,11 @@ interface ThemeProviderProps {
 }
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setThemeState] = useState<string>('luxury');
+  const [theme, setThemeState] = useState<string>('night');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem('portfolio-theme') || 'luxury';
+    const saved = localStorage.getItem('portfolio-theme') || 'night';
     setThemeState(saved);
     document.documentElement.setAttribute('data-theme', saved);
     setMounted(true);
@@ -32,7 +32,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   // Prevent flash of wrong theme
   if (!mounted) {
     return (
-      <ThemeContext.Provider value={{ theme: 'luxury', setTheme }}>
+      <ThemeContext.Provider value={{ theme: 'night', setTheme }}>
         {children}
       </ThemeContext.Provider>
     );

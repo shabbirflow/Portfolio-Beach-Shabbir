@@ -1,10 +1,10 @@
 export const stuff = {
   title: "Shabbir Kaderi",
   aboutCodeLines: [
-    "software developer & DSA enthusiast",
-    "skilled in fullStack development & DevOps",
-    "solving problems, crafting cool web presences",
-    "optimizing workflows for seamless delivery",
+    "software engineer passionate about algorithms",
+    "building full-stack apps and scalable infrastructure",
+    "focused on clean code and reliable CI/CD pipelines",
+    "always exploring new tech and trying to innovate",
   ],
   cvURL:
     "https://drive.google.com/drive/folders/1TUOf5S2SefMvBxPV2rKieBegMnaTGJCL?usp=sharing",
@@ -30,7 +30,7 @@ export const projects = [
     githubURL: "https://github.com/shabbirflow/Sleddit",
     liveURL: "https://sleddit-flame.vercel.app/",
     description:
-      "A FullStack Reddit Clone made with NextJS, Typescript + React and a MySQL database with all essential features and a clean UI.",
+      "A full-stack Reddit clone built with Next.js, TypeScript, and MySQL. Features an intuitive UI, secure authentication, and real-time database interactions.",
   },
   {
     title: "Blockchain Voting System",
@@ -38,7 +38,7 @@ export const projects = [
     githubURL: "https://github.com/shabbirflow/Blockchain-Voting",
     liveURL: "https://github.com/shabbirflow/Blockchain-Voting",
     description:
-      "A serverless, blockchain based voting system using Ethereum offering a more secure way for elections",
+      "A decentralized voting application built on Ethereum. Manages voter and candidate registration while securing votes on the blockchain, ensuring transparency and preventing double-voting.",
   },
   {
     title: "SwiftServe",
@@ -46,7 +46,7 @@ export const projects = [
     githubURL: "https://github.com/shabbirflow/SwiftServe",
     liveURL: "https://youtu.be/B2qUnOyspUQp",
     description:
-      "A deployment service to deploy your static websites to the internet & take your projects online with speed.",
+      "A containerized deployment platform for JavaScript and TypeScript apps initially hosted on GKE. Utilizes a microservice architecture and Redis queues for asynchronous, non-blocking deployments.",
   },
   {
     title: "Sorting Visualizer",
@@ -54,7 +54,7 @@ export const projects = [
     githubURL: "https://github.com/shabbirflow/Sorting-Visualizer",
     liveURL: "https://sort-visualize.netlify.app/",
     description:
-      "A beautiful visualizer for sorting algorithms made with React and ChartJS to visualize 5 of the most important sorting algorithms",
+      "An interactive educational tool built with React and Chart.js. Dynamically visualizes the step-by-step execution of classic sorting algorithms to demonstrate their time complexity and performance differences.",
   },
 ];
 
@@ -67,19 +67,19 @@ export const experienceTimeLine = [
   },
   {
     title: "Summer Intern @ Barclays",
-    desc: "Worked on ELK & CI/CD",
+    desc: "Automated Jenkins pipelines and environment configs",
     time: "June 2024 - July 2024",
     type: "work",
   },
   {
     title: "DevOps Intern @ Rhythmflows Solutions",
-    desc: "Worked on creating Jenkins pipelines",
+    desc: "Built Jenkins CI/CD workflows and Dockerized apps",
     time: "Jan 2024 - April 2024",
     type: "work",
   },
   {
     title: "DevOps Intern @ LightBeam.ai",
-    desc: "Worked on Prometheus stack & Alermanager",
+    desc: "Set up Prometheus monitoring and Kubernetes logging",
     time: "June 2023 - July 2023",
     type: "work",
   },
@@ -98,8 +98,8 @@ export const experience = [
     company: "TIAA",
     time: "July 2025 - Current",
     descBullets: [
-      "Developed client-facing demo applications using Java, Spring Boot, and Angular to model enterprise workflows for retirement planning and investment management enabling realistic stakeholder and sales demonstrations",
-      "Built mock backend services using Redis / ElastiCache and deployed on Tomcat, decoupling demos from live systems and supporting concurrent demos with predictable behavior without production access."
+      "Developed client-facing demo applications using Java, Spring Boot, and Angular to simulate retirement and investment workflows for stakeholder demonstrations.",
+      "Built mock backend services with Redis and ElastiCache to decouple demos from production data, enabling stable and concurrent sales presentations."
     ],
     image: "tiaa_logo.svg",
   },
@@ -108,9 +108,8 @@ export const experience = [
     company: "Barclays",
     time: "June 2024 - July 2024",
     descBullets: [
-      "Implemented deployment of specific changes using Jenkins by accessing files changed from diff in a merge event.",
-      "Added environment specific configuration for Dev, SIT, NFT & PROD environments",
-      "Modified shell scripts to make deployment of ELK stack components faster and more efficient",
+      "Designed Jenkins CI/CD pipelines with file-diff-driven triggers to execute jobs only on specific merge events, reducing unnecessary pipeline runs.",
+      "Automated environment-specific configurations across Dev, SIT, NFT, and PROD to minimize configuration drift and deployment errors.",
     ],
     image: "barclays.png",
   },
@@ -119,9 +118,8 @@ export const experience = [
     company: "RhythmFlows Solutions",
     time: "Jan 2024 - April 2024",
     descBullets: [
-      "Created Docker images for Angular frontend & DjangoRestFramework API to streamline deployment.",
-      "Created CI / CD pipelines with Jenkins, achieving continuous integration & deployment.",
-      "Assisted in Alertmanager configuration with Prometheus & Grafana monitoring stack",
+      "Created standardized Docker images for Angular frontends and Django REST APIs, ensuring consistent builds across local and production environments.",
+      "Automated build and deployment stages using Jenkins CI/CD pipelines, reducing manual intervention and improving release reliability.",
     ],
     image: "rhythmflows.jpeg",
   },
@@ -130,9 +128,8 @@ export const experience = [
     company: "LightBeam.ai",
     time: "June 2023 - July 2023",
     descBullets: [
-      "Managed Kubernetes cluster on Linux VM, ensuring optimal functionality & collaboration using GitHub. ",
-      "Utilized Prometheus stack for monitoring cluster components, implemented Alertmanager for alerts on Slack",
-      "Configured Kubernetes Events Exporter, exporting logs and events using Elasticsearch stack.",
+      "Integrated Prometheus and Alertmanager with Slack notifications to improve system health visibility and accelerate issue detection.",
+      "Centralized Kubernetes event logging using Elasticsearch and Kubernetes Events Exporter for unified observability and cluster debugging.",
     ],
     image: "lightbeam.png",
   },

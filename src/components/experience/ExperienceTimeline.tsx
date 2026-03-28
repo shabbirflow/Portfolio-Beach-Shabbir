@@ -42,9 +42,9 @@ const ExperienceTimeline: FC<ExperienceTimelineProps> = ({ expNum }) => {
                   ind % 2
                     ? "timeline-start md:text-end text-center"
                     : "timeline-end md:text-start text-center"
-                } mb-10 w-full max-w-[280px] sm:max-w-sm`}
+                } mb-4 w-full max-w-[280px] sm:max-w-sm`}
               >
-                <div className="bg-white/5 backdrop-blur-md border border-white/10 p-5 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(var(--p),0.15)] cursor-pointer">
+                <div className="bg-white/5 backdrop-blur-md border border-white/10 p-3 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(var(--p),0.15)] cursor-pointer">
                   <time
                     className={`font-mono italic text-accent/80 text-sm block mb-1 ${
                       ind == 0

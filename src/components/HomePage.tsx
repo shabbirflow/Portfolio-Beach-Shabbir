@@ -81,9 +81,9 @@ const HomePage: FC = () => {
             <div className="w-full max-w-[400px] md:max-w-[600px] lg:max-w-[800px] h-[400px] md:h-[500px] lg:h-[600px]">
               {/* Adjust the `scale={...}` below to make the model bigger or smaller. 
                   Currently reduced from 1.8 to 1.6 as requested. */}
-              <ModelViewer 
-                modelPath="/models/japanese_bridge_garden_fixed.glb" 
-                scale={1.6}
+              <ModelViewer
+                modelPath="/models/japanese_bridge_garden_fixed.glb"
+                scale={1.5}
                 position={[0, 0, 0]}
               />
             </div>

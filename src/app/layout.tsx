@@ -9,12 +9,12 @@ import ThemedAurora from "@/components/ui/ThemedAurora";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shabbir Kaderi | Software Developer Portfolio",
+  title: "Shabbir Kaderi | Software Engineer Portfolio",
   description:
-    "Shabbir Kaderi — Software Developer skilled in Full-Stack Development & DevOps. Explore projects, experience, and skills.",
+    "Shabbir Kaderi — Software Engineer skilled in Full-Stack Development & DevOps. Explore projects, experience, and skills.",
   keywords: [
     "Shabbir Kaderi",
-    "Software Developer",
+    "Software Engineer",
     "Full Stack Developer",
     "DevOps",
     "React",
@@ -22,18 +22,18 @@ export const metadata: Metadata = {
     "Portfolio",
   ],
   openGraph: {
-    title: "Shabbir Kaderi | Software Developer Portfolio",
+    title: "Shabbir Kaderi | Software Engineer Portfolio",
     description:
-      "Software Developer skilled in Full-Stack Development & DevOps.",
+      "Software Engineer skilled in Full-Stack Development & DevOps.",
     type: "website",
     locale: "en_IN",
     siteName: "Shabbir Kaderi Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shabbir Kaderi | Software Developer Portfolio",
+    title: "Shabbir Kaderi | Software Engineer Portfolio",
     description:
-      "Software Developer skilled in Full-Stack Development & DevOps.",
+      "Software Engineer skilled in Full-Stack Development & DevOps.",
   },
   robots: {
     index: true,

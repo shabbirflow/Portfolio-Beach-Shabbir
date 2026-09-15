@@ -44,9 +44,9 @@ export const projects = [
     title: "SwiftServe",
     image: "swiftserve.png",
     githubURL: "https://github.com/shabbirflow/SwiftServe",
-    liveURL: "https://youtu.be/B2qUnOyspUQp",
+    liveURL: "https://youtu.be/B2qUnOyspUQ",
     description:
-      "A containerized deployment platform for JavaScript and TypeScript apps initially hosted on GKE. Utilizes a microservice architecture and Redis queues for asynchronous, non-blocking deployments.",
+      "A Vercel-style deployment platform for React/TypeScript sites: 3 independently scalable services on GKE, Redis build queues, and a reverse proxy that serves every deployment on its own subdomain.",
   },
   {
     title: "Sorting Visualizer",
@@ -60,25 +60,25 @@ export const projects = [
 
 export const experienceTimeLine = [
   {
-    title: "Graduate Trainee @ TIAA (current)",
+    title: "Software Engineer @ TIAA (current)",
     // desc: "Worked on ELK & CI/CD",
     time: "July 2025 - Present",
     type: "work",
   },
   {
-    title: "Summer Intern @ Barclays",
+    title: "Technology Summer Intern @ Barclays",
     desc: "Automated Jenkins pipelines and environment configs",
     time: "June 2024 - July 2024",
     type: "work",
   },
   {
-    title: "DevOps Intern @ Rhythmflows Solutions",
+    title: "Software Engineer Intern @ Rhythmflows Solutions",
     desc: "Built Jenkins CI/CD workflows and Dockerized apps",
     time: "Jan 2024 - April 2024",
     type: "work",
   },
   {
-    title: "DevOps Intern @ LightBeam.ai",
+    title: "Software Developer Intern @ LightBeam.ai",
     desc: "Set up Prometheus monitoring and Kubernetes logging",
     time: "June 2023 - July 2023",
     type: "work",
@@ -88,18 +88,21 @@ export const experienceTimeLine = [
     desc: "B.E. in Electronics & Telecommunication Eng.",
     time: "2021 - 2025",
     type: "education",
-    grade: "8.1 CGPA",
+    grade: "8.45 CGPA",
   },
 ];
 
 export const experience = [
   {
-    title: "Graduate Trainee",
+    title: "Software Engineer",
     company: "TIAA",
     time: "July 2025 - Current",
     descBullets: [
-      "Developed client-facing demo applications using Java, Spring Boot, and Angular to simulate retirement and investment workflows for stakeholder demonstrations.",
-      "Built mock backend services with Redis and ElastiCache to decouple demos from production data, enabling stable and concurrent sales presentations."
+      "Work on a service-virtualization platform running 25+ TIAA retirement apps end to end for 60+ client demos.",
+      "Designed and built REST controllers and services in Java 17 / Spring Boot microservices (API gateway, service-virtualization API) for request routing, URL rewriting, OAuth token issuance, and session handling.",
+      "Sole engineer on 3 app integrations (fund transfers, contributions, investment exchange), extending a Redis data layer of 1,000+ responses across 11 personas and building allocation charts with error fallbacks.",
+      "Owned production support for 3 AWS EC2 Linux servers: root-caused an outage the team was stuck on for days (saving a full re-integration) and fixed Redis connection failures, HTTP 500s, and expired TLS certificates.",
+      "Drive the technical build of interactive product tours for TIAA's retirement & investment suites, turning Figma designs into HTML/CSS/JavaScript and creating the team's reusable templates and build guide.",
     ],
     image: "tiaa_logo.svg",
   },
@@ -108,38 +111,38 @@ export const experience = [
     company: "Barclays",
     time: "June 2024 - July 2024",
     descBullets: [
-      "Designed Jenkins CI/CD pipelines with file-diff-driven triggers to execute jobs only on specific merge events, reducing unnecessary pipeline runs.",
-      "Automated environment-specific configurations across Dev, SIT, NFT, and PROD to minimize configuration drift and deployment errors.",
+      "Built change-aware Jenkins CI/CD pipelines that diff each merge and run only the jobs for modules that changed, replacing full pipeline runs on every merge and speeding up CI feedback.",
+      "Automated environment-specific configuration across Dev, SIT, NFT, and PROD with shell scripts, removing manual config edits and a common source of deployment errors in enterprise releases.",
     ],
     image: "barclays.png",
   },
   {
-    title: "DevOps Intern",
+    title: "Software Engineer Intern",
     company: "RhythmFlows Solutions",
     time: "Jan 2024 - April 2024",
     descBullets: [
-      "Created standardized Docker images for Angular frontends and Django REST APIs, ensuring consistent builds across local and production environments.",
-      "Automated build and deployment stages using Jenkins CI/CD pipelines, reducing manual intervention and improving release reliability.",
+      "Designed and built the startup's first CI/CD pipeline in Jenkins with the tech lead (code quality, build, test, deploy, verify), replacing manual deployments and cutting manual release steps by 80%.",
+      "Dockerized Angular frontends and Django REST APIs, so development and production ran identical builds.",
     ],
     image: "rhythmflows.jpeg",
   },
   {
-    title: "DevOps Intern",
+    title: "Software Developer Intern",
     company: "LightBeam.ai",
     time: "June 2023 - July 2023",
     descBullets: [
-      "Integrated Prometheus and Alertmanager with Slack notifications to improve system health visibility and accelerate issue detection.",
-      "Centralized Kubernetes event logging using Elasticsearch and Kubernetes Events Exporter for unified observability and cluster debugging.",
+      "Integrated Prometheus Alertmanager into the Kubernetes monitoring stack, routing alerts for crash-looping and failed pods to Slack and email so failures surfaced in real time.",
+      "Centralized Kubernetes events in Elasticsearch with Kubernetes Events Exporter, keeping event history past Kubernetes' default 1-hour retention and cutting cluster-debugging time by 40%.",
     ],
     image: "lightbeam.png",
   },
 ];
 
 export const techSkills = {
-  languages: ["CPP", "JAVA", "JAVASCRIPT", "Python"],
-  frontend: ["HTML", "CSS", "REACT", "redux", "tailwind"],
-  backend: ["express", "mongodb", "mysql", "nodejs"],
-  devOps: ["Docker", "Kubernetes", "Linux", "git", "jenkins"],
+  languages: ["JAVA", "CPP", "JAVASCRIPT", "TYPESCRIPT", "Python"],
+  frontend: ["REACT", "redux", "tailwind"],
+  backend: ["nodejs", "express", "mysql", "mongodb"],
+  devOps: ["Docker", "Kubernetes", "jenkins", "Linux", "git"],
 };
 
 export const socialLinks = [
